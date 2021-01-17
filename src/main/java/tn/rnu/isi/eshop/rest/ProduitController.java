@@ -15,7 +15,6 @@ import java.util.List;
 /**
  * REST controller Pour gerer Produit.
  */
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api")
 public class ProduitController {
