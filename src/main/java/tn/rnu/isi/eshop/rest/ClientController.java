@@ -52,11 +52,10 @@ public class ClientController {
         	 }
       
     }
-
    
     @GetMapping("/clients/{id}")
-    public Client getClient(@PathVariable Long idClient) {
-        return  clientRepository.findByIdClient(idClient);
+    public Client getClient(@PathVariable Long id) {
+        return  clientRepository.findByIdClient(id);
      }
 
  

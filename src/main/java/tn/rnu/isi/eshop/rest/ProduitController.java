@@ -55,7 +55,6 @@ public class ProduitController {
          
     }
 
-   
     @GetMapping("/produits/{id}")
     public Produit getProduit(@PathVariable Long id) {
         return  produitRepository.findByIdProduit(id);

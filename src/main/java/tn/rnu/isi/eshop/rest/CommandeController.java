@@ -55,8 +55,8 @@ public class CommandeController {
 
    
     @GetMapping("/commandes/{id}")
-    public Commande getCommande(@PathVariable Long idCommande) {
-        return  commandeRepository.findByIdCommande(idCommande);
+    public Commande getCommande(@PathVariable Long id) {
+        return  commandeRepository.findByIdCommande(id);
      }
 
  

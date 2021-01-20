@@ -49,15 +49,13 @@ public class CategorieController {
     public void updateCategorie(@RequestBody Categorie categorie)  {
          if (categorie.getIdCateg() != null) {
         	 categorieRepository.save(categorie);
-        }
-       
-         
+        }   
     }
 
    
     @GetMapping("/categories/{id}")
-    public Categorie getCategorie(@PathVariable Long idCategorie) {
-        return  categorieRepository.findByIdCateg(idCategorie);
+    public Categorie getCategorie(@PathVariable Long id) {
+        return  categorieRepository.findByIdCateg(id);
      }
 
  
