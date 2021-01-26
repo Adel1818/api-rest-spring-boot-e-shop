@@ -34,7 +34,7 @@ public class ProduitController {
         this.produitRepository = produitRepository;
     }
 /**
- * ist<Produit> getAllProduits() 
+ * list<Produit> getAllProduits() 
  * @return
  */
     @GetMapping("/produits")
